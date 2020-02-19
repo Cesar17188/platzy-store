@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "platzy-store": {
@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/swiper/css/swiper.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "platzy-store"
+    }
+  },
+  "defaultProject": "platzy-store",
+  "cli": {
+    "analytics": "ee9c8a67-28c0-43ef-b49b-07b454104335"
+  }
 }
