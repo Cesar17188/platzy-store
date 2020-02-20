@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule, PreloadAllModules} from '@angular/router';
 
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LayoutComponent } from './layout/layout.component';
 import { from } from 'rxjs';
 
@@ -39,7 +38,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    component: PageNotFoundComponent,
+    loadChildren: () => import('./page-not-found/product-not-found.module').then(m => m.PageNotFoundModule),
   },
 ];
 
