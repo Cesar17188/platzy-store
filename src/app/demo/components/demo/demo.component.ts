@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-demo',
   templateUrl: './demo.component.html',
@@ -23,9 +24,7 @@ export class DemoComponent implements OnInit {
     this.items.splice(index, 1);
   }
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
