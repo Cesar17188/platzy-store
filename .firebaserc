@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "platzynotas-ecu": {
+      "hosting": {
+        "platzy-store": [
+          "platzynotas-ecu"
+        ]
+      }
+    }
+  }
+}
