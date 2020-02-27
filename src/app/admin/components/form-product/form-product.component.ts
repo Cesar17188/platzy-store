@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import 'firebase/storage';
 import { AngularFireStorage } from '@angular/fire/storage';
-
 import { finalize } from 'rxjs/operators';
 
 import { MyValidators } from './../../../utils/validators';

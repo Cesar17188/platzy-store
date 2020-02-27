@@ -5,8 +5,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
-
+import 'firebase/firestore';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LayoutComponent } from './layout/layout.component';
@@ -33,7 +34,8 @@ import { environment } from '../environments/environment';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    AngularFirestoreModule
 
   ],
   providers: [],
